@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="panels">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#panel1">COGS</a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="panel panel1">
+            <form id="totals">
+                <div class="inputs">
+                    <input type="number" class="inputField" name="totalAmount" id="totalAmount"  placeholder="0" >
+                    <input type="number" class="inputField" name="percentageAmount" id="percentage" placeholder="%">
+                    <button type="button" id="btnPaste" onclick="pasteBtn('totalAmount')">Paste</button>
+                    <button type="button" id="btnEnter">Enter</button>
+                    <input type="button" class="reset" value="Reset" onclick="resetForm()">
+                </div>
+                <div class="paper">
+                    <span>Paper Goods</span>
+                    <output id="paperGoods"></output>
+                    <button type="button" class="btnCopy" onclick="copyBtn('paperGoods')">&#10002;</button>
+                </div>
+                <div class="goods">
+                    <span>Cost of Goods Sold</span>
+                    <output id="costGoodsSold"></output>
+                    <button type="button" class="btnCopy" id="btnCopy" onclick="copyBtn('costGoodsSold')">&#10002;</button>
+                </div>
+            </form>
+        </section>
+        <section class="panel panel2"></section>
+        <section class="panel panel3"></section>
+    </main>
+</body>
+</html>

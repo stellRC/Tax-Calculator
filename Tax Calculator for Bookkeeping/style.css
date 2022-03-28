@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, main {
+    margin: 0;
+    color: antiquewhite;
+    font-size: 24px;
+    background: black;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* .panels {
+    display: flex;
+}
+
+.panel:active {
+    flex: 3;
+}
+
+.panel1 {
+    background: black;
+}
+
+.panel2 {
+    background: gray;
+}
+
+.panel3 {
+    background: black;
+} */
+
+form {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputs, 
+.paper, 
+.goods {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#percentage, #totalAmount,textarea, select {
+    background: white;
+    color: rgb(39, 38, 38);
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    height: 50px;
+    text-align: center;
+}
+
+input, button {
+    outline: none;
+    font-size: 24px;
+    padding: 1rem;
+   
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.reset {
+    background: red;
+    border: none;
+    border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1;
+  transition: 0.5s;
+}
+
+span {
+    font-size: 60px;
+}
+
+
+button:hover,
+#btnEnter:hover,
+.reset:hover {
+    box-shadow: none;
+}
+
+
+.btnCopy {
+    color: antiquewhite;
+    background: blue;
+    cursor: pointer;
+}
+
+.btnCopy:active {
+    background: red;
+    transition: .1s all ease-in;
+}
